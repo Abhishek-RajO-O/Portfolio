@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 // components
 import Text from "../components/Text";
 import TypeWritter from "../components/TypeWriter";
+import ProjectBtn from "../components/ProjectBtn";
 
 //code
 function Home() {
@@ -39,11 +40,11 @@ function Home() {
         </div>
         <div className="h-10 mt-5">
           {show2 && (
-            <TypeWritter arr={["A Front-end Developer", "A java Developer"]} />
+            <TypeWritter arr={["A Front-end Developer", "A java Developer","A React-Developer","A Java Developer"]} />
           )}
         </div>
-        <button onClick={() => navigate("./Projects")}>
-          See Projects here.
+        <button onClick={() => navigate("./Projects")} >
+          <ProjectBtn className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-700 rounded"/>
         </button>
       </div>
     </>
