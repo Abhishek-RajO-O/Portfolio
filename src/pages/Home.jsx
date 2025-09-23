@@ -34,10 +34,10 @@ function Home() {
         <pre className="text-6xl text-white font-semibold text-center poppins-regular">
           Hello!
         </pre>
-        <div className="flex flex-row items-baseline h-10 sm:h-30">
+        <div className="flex flex-row items-baseline sm:h-10">
           {show && <Text text="I am Abhishek Raj" />}
         </div>
-        <div className="h-10">
+        <div className="h-10 mt-5">
           {show2 && (
             <TypeWritter arr={["A Front-end Developer", "A java Developer"]} />
           )}

@@ -6,7 +6,7 @@ function Text(props) {
     <>
       <SplitText
         text={props.text}
-        className="text-5xl text-white font-semibold text-center poppins-regular h-20"
+        className="text-5xl text-white font-semibold text-center poppins-regular h-27 sm:h-20"
         delay={100}
         duration={0.3}
         ease="power3.out"
