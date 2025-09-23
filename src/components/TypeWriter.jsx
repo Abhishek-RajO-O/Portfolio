@@ -1,13 +1,14 @@
 import TextType from "../ReactBits/TextType";
 
-function TypeWritter() {
+function TypeWritter(props) {
   return (
     <TextType
-      text={["Text typing effect", "for your websites", "Happy coding!"]}
-      typingSpeed={75}
+      text={props.arr}
+      typingSpeed={50}
       pauseDuration={1500}
       showCursor={true}
       cursorCharacter="|"
+      className="poppins-thin text-3xl"
     />
   );
 }
